@@ -9,6 +9,12 @@ Je suis BEDU Louis, étudiant à l'Université de Lille. Mon portfolio présente
 - **Base de données:** SQL
 
 ## Éducation
+- **Lycée Fénelon**
+  - BACCALAURÉAT GÉNÉRAL
+  - 2019 - 2020
+- **Lycée Paul Duez**
+  - BACCALAURÉAT SCIENCES ET TECHNOLOGIES DE L'INDUSTRIE ET DU DÉVELOPPEMENT DURABLE
+  - 2020 - 2022
 - **Université de Lille**
   - BACHELOR UNIVERSITAIRE DE TECHNOLOGIE INFORMATIQUE
   - 2022 - [En cours]
