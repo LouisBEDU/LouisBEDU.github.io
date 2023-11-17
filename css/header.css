@@ -1,0 +1,21 @@
+nav {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, auto);
+    background-color: lightseagreen;
+    padding: 20px;
+    border-radius: 20px 0 20px 0;
+    margin: 1% 5%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Comfortaa-Regular';
+    transition: .2s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
