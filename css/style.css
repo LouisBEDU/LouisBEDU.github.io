@@ -26,8 +26,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
-#head div a {
+#head a {
     color: greenyellow;
+}
+
+#head h1 a {
+    text-decoration: none;
 }
 
 #screen {
