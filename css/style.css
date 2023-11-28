@@ -30,10 +30,6 @@ body {
     color: greenyellow;
 }
 
-#head h1 a {
-    text-decoration: none;
-}
-
 #screen {
     position: absolute;
     width: 100%;
