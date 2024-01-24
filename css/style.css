@@ -84,6 +84,7 @@ div.container>div>div.svg>img {
         display: grid;
         grid-auto-flow: column;
         justify-items: center;
+        justify-content: center;
     }
     
     div.container>div.active {
