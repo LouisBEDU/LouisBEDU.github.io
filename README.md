@@ -1,26 +1,24 @@
-# Bienvenue sur le Portfolio de BEDU Louis
+# Bienvenue mon Portfolio
 
-## À propos de moi
-Je suis BEDU Louis, étudiant à l'Université de Lille. Mon portfolio présente mes projets, compétences et mon parcours.
+Je m'appelle Louis et je suis étudiant en informatique à Lille. Passionné par les nouvelles technologies et le développement logiciel, je consacre mon temps à approfondir mes connaissances dans ce domaine en constante évolution. Mon parcours académique, combiné à mes projets personnels, m'a permis de développer des compétences solides dans plusieurs langages de programmation, tels que Java, C, et SQL, ainsi que dans la gestion de bases de données. J'ai également une bonne maîtrise des technologies web, notamment HTML, CSS, et BASH, ce qui me permet d'aborder diérents aspects du développement logiciel.
 
-## Compétences
-- **Développement Web:** HTML, CSS
-- **Langages de Programmation:** Java, C
-- **Base de données:** SQL
+En parallèle de mes études, je me tiens informé des avancées récentes dans le domaine informatique. Ces expériences m'ont appris à être rigoureux, à résoudre des problèmes complexes, et à travailler de manière autonome tout en appréciant l'importance du travail en équipe.
 
-## Éducation
-- **Lycée Fénelon**
-  - BACCALAURÉAT GÉNÉRAL
-  - 2019 - 2020
-- **Lycée Paul Duez**
-  - BACCALAURÉAT SCIENCES ET TECHNOLOGIES DE L'INDUSTRIE ET DU DÉVELOPPEMENT DURABLE
-  - 2020 - 2022
-- **Université de Lille**
-  - BACHELOR UNIVERSITAIRE DE TECHNOLOGIE INFORMATIQUE
-  - 2022 - [En cours]
+## Formations
+- ### BUT Informatique
+    IUT de Lille  
+    2022 - Aujourd'hui
 
-## Contact
-📧 louis.bedu.etu@univ-lille.fr  
-💻 [GitHub](https://github.com/LouisBEDU)
+- ### Baccalauréat Scientifique
+    Lycée Paul Duez de   
+    2020 - 2022
 
-**Explorez mes projets et découvrez mon parcours !**
+# Compétences
+- ### Langages de Programmation 
+    Java, C  
+    HTML, CSS, JavaScript
+
+- ### Outils & Technologies
+    Git  
+    MySQL, PostgreSQL  
+    Linux, Windows
