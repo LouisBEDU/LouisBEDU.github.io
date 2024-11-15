@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'SourceCodePro';
-    src: url('SourceCodePro.ttf');
-}
-
 body {
     margin: 0;
     color: #111;
@@ -15,12 +10,14 @@ nav {
     display: flex;
     justify-content: center;
     position: fixed;
+    user-select: none;
     gap: 3em;
     width: 100vw;
     padding: 2em 0;
     background-color: #eee;
     opacity: 0.8;
     border-bottom: 0.25em solid #ddd;
+    z-index: 1;
 }
 
 nav>a {
@@ -51,30 +48,99 @@ nav>a:hover::before {
 }
 
 main>div {
+    position: relative;
     width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh - 90px);
     border-bottom: 0.25em solid #ddd;
 }
 
 main>div>h1 {
     margin: 0;
-    padding: 1em 0;
+    padding: 1em 0 0 0;
     text-align: center;
+    font-size: 3em;
 }
 
-main>div#Accueil {
+main>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
+    padding-bottom: 5em;
 }
 
-main>div#Accueil>p {
+p#texte {
     font-size: 1.1em;
     text-align: justify;
     padding: 1.5em 3em;
     max-width: 50%;
     border-radius: 1.5em;
     background: #ececec;
-    box-shadow:  0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #ffffff;
+    box-shadow:  0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+}
+
+main>div#Accueil>p>a {
+    color: #00008b;
+}
+
+main>div#Formations>div {
+    position: relative;
+    display: grid;
+    padding: 0 0 0 6em;
+    border-left: 2px dotted #111;
+}
+
+main>div#Formations>div>div::before {
+    content: '';
+    position: absolute;
+    left: calc(-6em - 2px);
+    top: 0;
+    height: 100%;
+    border: 1px solid #111;
+}
+
+main>div#Formations>div>div:not(:last-child) {
+    margin-bottom: 50%;
+}
+
+main>div#Formations>div>div {
+    position: relative;
+    padding: 1em 1.5em;
+    width: fit-content;
+    border-radius: 1.5em;
+    background: #ececec;
+    box-shadow:  0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+}
+
+main>div#Formations>div>div>div>p {
+    position: absolute;
+    left: -5em;
+}
+
+main>div#Formations>div>div>div>p:first-child {
+    top: 0em;
+}
+
+main>div#Formations>div>div>div>p:last-child {
+    bottom: 0em;
+}
+
+main>div#Compétences>div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+main>div#Compétences>div>img {
+    width: 10em;
+    padding: 1em 1.5em;
+    border-radius: 1.5em;
+    background: #ececec;
+    box-shadow:  0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+}
+
+main>div#Compétences>div>img:hover {
+    box-shadow: inset 0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+
 }
