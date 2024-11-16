@@ -69,28 +69,28 @@ main>div {
     padding-bottom: 5em;
 }
 
-p#texte {
+.text-box {
     font-size: 1.1em;
     text-align: justify;
     padding: 1.5em 3em;
     max-width: 50%;
     border-radius: 1.5em;
     background: #ececec;
-    box-shadow:  0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+    box-shadow: 0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
 }
 
-main>div#Accueil>p>a {
+main>div#home>p>a {
     color: #00008b;
 }
 
-main>div#Formations>div {
+main>div#formations>div {
     position: relative;
     display: grid;
     padding: 0 0 0 6em;
     border-left: 2px dotted #111;
 }
 
-main>div#Formations>div>div::before {
+main>div#formations>div>div::before {
     content: '';
     position: absolute;
     left: calc(-6em - 2px);
@@ -99,48 +99,65 @@ main>div#Formations>div>div::before {
     border: 1px solid #111;
 }
 
-main>div#Formations>div>div:not(:last-child) {
+main>div#formations>div>div:not(:last-child) {
     margin-bottom: 50%;
 }
 
-main>div#Formations>div>div {
+main>div#formations>div>div {
     position: relative;
     padding: 1em 1.5em;
     width: fit-content;
     border-radius: 1.5em;
     background: #ececec;
-    box-shadow:  0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+    box-shadow: 0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
 }
 
-main>div#Formations>div>div>div>p {
+main>div#formations>div>div>p:not(:last-child) {
     position: absolute;
     left: -5em;
 }
 
-main>div#Formations>div>div>div>p:first-child {
+main>div#formations>div>div>p:nth-child(0) {
     top: 0em;
 }
 
-main>div#Formations>div>div>div>p:last-child {
+main>div#formations>div>div>p:nth-child(1) {
     bottom: 0em;
 }
 
-main>div#Compétences>div {
+main>div#skills>div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 3em;
 }
 
-main>div#Compétences>div>img {
-    width: 10em;
+main>div#skills>div>img {
+    width: 8em;
     padding: 1em 1.5em;
     border-radius: 1.5em;
     background: #ececec;
-    box-shadow:  0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+    box-shadow: 0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
 }
 
-main>div#Compétences>div>img:hover {
+main>div#skills>div>img:hover {
     box-shadow: inset 0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+}
 
+main>div#contact>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+}
+
+main>div#contact>div>a {
+    display: grid;
+    justify-items: center;
+    text-decoration: none;
+    color: #111;
+}
+
+main>div#contact>div>a>img {
+    width: 5em;
 }
