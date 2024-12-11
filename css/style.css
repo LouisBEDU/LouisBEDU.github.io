@@ -32,16 +32,22 @@ nav>a.active {
     font-weight: bold;
 }
 
-nav>a:hover::before {
+nav>a::before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 0%;
+    transition: width 750ms;
     height: 10%;
     top: 125%;
     background-color: #111;
 }
 
-@media only screen and (max-width: 720px) {
+nav>a:hover::before {
+    content: '';
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
     nav {
         display: none;
     }
@@ -58,7 +64,22 @@ main>div>h1 {
     margin: 0;
     padding: 1em 0 0 0;
     text-align: center;
+    position: relative;
     font-size: 3em;
+    color: #ececec;
+}
+
+
+main>div>h1::before {
+    content: '';
+    position: absolute;
+    background-color: #00008b;
+    width: 120vw;
+    z-index: -1;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
 }
 
 main>div {
@@ -100,7 +121,7 @@ main>div#formations>div>div::before {
 }
 
 main>div#formations>div>div:not(:last-child) {
-    margin-bottom: 50%;
+    margin-bottom: 30%;
 }
 
 main>div#formations>div>div {
@@ -117,11 +138,11 @@ main>div#formations>div>div>p:not(:last-child) {
     left: -5em;
 }
 
-main>div#formations>div>div>p:nth-child(0) {
+main>div#formations>div>div>p:nth-child() {
     top: 0em;
 }
 
-main>div#formations>div>div>p:nth-child(1) {
+main>div#formations>div>div>p:nth-child(2) {
     bottom: 0em;
 }
 
@@ -142,6 +163,40 @@ main>div#skills>div>img {
 
 main>div#skills>div>img:hover {
     box-shadow: inset 0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+}
+
+main>div#projects>div {
+    display: flex;
+    text-align: justify;
+    gap: 3em;
+    margin: 2em 10em;
+    align-items: center;
+    padding: 1em 1.5em;
+    border-radius: 1.5em;
+    background: #ececec;
+    box-shadow: 0.5em 0.5em 1em #bebebe, -0.5em -0.5em 1em #fff;
+}
+
+main>div#projects>div:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+main>div#projects>div>div>h2 {
+    text-align: center;
+}
+
+main>div#projects>div>img {
+    width: 800px;
+    height: max-content;
+    border-radius: 1em;
+}
+
+@media only screen and (max-width: 1500px) {
+    main>div#projects>div:nth-child(even),
+    main>div#projects>div {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 main>div#contact>div {

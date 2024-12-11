@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio | BEDU Louis</title>
 </head>
+
 <body>
     <nav>
         <a href="#home" class="active">Accueil</a>
@@ -95,6 +97,77 @@
         </div> -->
         <div id="projects">
             <h1>Réalisations</h1>
+            <div>
+                <div>
+                    <h2>ClassiGit</h2>
+                    <p>
+                        Le projet a pour objectif de développer un outil permettant de <b>charger</b>, <b>afficher</b>
+                        et
+                        <b>classifier des données</b> en utilisant l'algorithme <b>k-NN</b> (k plus proches voisins). Ce
+                        projet offre une interface graphique permettant de visualiser des jeux de données sous forme de
+                        <b>nuages de points</b>.
+                    </p>
+                    <h3>Fonctionnalités principales :</h3>
+
+                    <ul>
+                        <li><b>Chargement et affichage des données</b> : L'utilisateur peut charger des fichiers de
+                            données et les visualiser sous forme de nuage de points. Le projet supporte des jeux de
+                            données comme Iris.</li>
+                        <li><b>Projection des données</b> : L'application permet à l'utilisateur de choisir les
+                            attributs à projeter sur les axes X et Y pour une exploration interactive des données.</li>
+                        <li><b>Classification k-NN</b> : L'outil permet de classifier des données non étiquetées en
+                            utilisant l'algorithme k-NN, avec la possibilité de choisir différentes distances pour la
+                            classification (par exemple, Manhattan ou Euclidienne).</li>
+                        <li><b>Ajout de nouveaux points</b> : Les utilisateurs peuvent ajouter de nouvelles données au
+                            nuage de points et choisir la catégorie de ces nouveaux points, qui seront ensuite intégrés
+                            à la visualisation.</li>
+                        <li><b>Évaluation de la robustesse</b> : L'application permet également d'évaluer la performance
+                            du modèle k-NN pour différents paramètres, notamment pour déterminer le meilleur choix de k.
+                        </li>
+                    </ul>
+                </div>
+                <img src="./img/projects/ClassiGit.png" alt="ClassiGit">
+            </div>
+            <div>
+                <div>
+                    <h2>Pédagopic</h2>
+                    <p>
+                        <b>Pédagopic</b> est un jeu de plateau pouvant être joué par 1 à 7 <b>joueurs</b>.
+                        Ce jeu de plateau propose une expérience unique avec plusieurs <b>niveaux</b> de difficulté.
+                        Une fois que les <b>joueurs</b> atteignent un nouveau <b>niveau</b>, ils ne peuvent plus
+                        Redescendre, créant ainsi un défi croissant tout au long du <b>jeu</b>. Le but ultime de
+                        <b>PédagoPic</b>
+                        est d'atteindre le dernier <b>niveau</b> en répondant <b>correctement</b> à toutes les
+                        <b>questions éducatives</b>.
+                        Les <b>joueurs</b> apprennent en <b>Progressant</b>, renforçant ainsi leurs <b>connaissances</b>
+                        tout en s'amusant.
+                    </p>
+
+                    <h3>Fonctionnalités principales :</h3>
+
+                    <ul>
+                        <li><b>Modes de difficulté ajustables</b> : Les joueurs peuvent choisir parmi plusieurs niveaux
+                            de difficulté adaptés à leurs connaissances et à leurs compétences. Chaque niveau offre un
+                            défi croissant.</li>
+                        <li><b>Progression éducative</b> : Le jeu est conçu pour renforcer les connaissances des joueurs
+                            en leur posant des questions éducatives dans divers domaines, leur permettant d'apprendre
+                            tout en s'amusant.</li>
+                        <li><b>Système de progression bloquée</b> : Une fois un niveau atteint, les joueurs ne peuvent
+                            pas redescendre, encourageant ainsi une progression continue et stratégique.</li>
+                        <li><b>Options de jeu en solo et en groupe</b> : Jouez seul pour tester vos connaissances ou en
+                            groupe (jusqu'à 7 joueurs) pour une expérience interactive et compétitive.</li>
+                        <li><b>Cartes thématiques variées</b> : Le jeu inclut des cartes avec des questions éducatives
+                            réparties en plusieurs catégories, comme les sciences, l'histoire, les mathématiques, et
+                            bien d'autres.</li>
+                        <li><b>Suivi des performances</b> : Les joueurs peuvent suivre leur progression au fil des
+                            niveaux et identifier les domaines où ils doivent s'améliorer.</li>
+                        <li><b>Adaptation personnalisée</b> : Les questions peuvent être personnalisées en fonction des
+                            préférences ou des besoins spécifiques, offrant une expérience unique pour chaque partie.
+                        </li>
+                    </ul>
+                </div>
+                <img src="./img/projects/Pedagopic.png" alt="ClassiGit">
+            </div>
         </div>
         <div id="contact">
             <h1>Contact</h1>
@@ -103,8 +176,10 @@
                 réalisations, n'hésitez pas à me contacter. Je suis ouvert à de nouveaux défis et échanges.<br><br>À
                 très bientôt !</p>
             <div>
-                <a href="https://github.com/LouisBEDU" target="_blank"><img src="img/contact/github.png" alt="Github">Github</a>
-                <a href="res/Curriculum vitæ.pdf" target="_blank"><img src="img/contact/contacts.png" alt="Curriculum vitæ">Curriculum vitæ</a>
+                <a href="https://github.com/LouisBEDU" target="_blank"><img src="img/contact/github.png"
+                        alt="Github">Github</a>
+                <a href="res/Curriculum vitæ.pdf" target="_blank"><img src="img/contact/contacts.png"
+                        alt="Curriculum vitæ">Curriculum vitæ</a>
                 <a><img src="img/contact/phone.png" alt="Téléphone">+33 6 30 64 37 26</a>
                 <a><img src="img/contact/mail.png" alt="Mail">louis.bedu.etu@univ-lille.fr</a>
             </div>
@@ -166,4 +241,5 @@
     window.addEventListener("resize", setMainPadding);
     window.addEventListener("scroll", activateNavLink);
 </script>
+
 </html>
