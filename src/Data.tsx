@@ -9,7 +9,7 @@ export const NAV: NavItem[] = [
 ];
 
 export const STACK: StackMap = {
-  Langages: ["Java", "C", "JavaScript", "TypeScript", "HTML", "CSS"],
+  Langages: ["Java", "C", "JavaScript", "TypeScript", "HTML", "CSS", "Lua"],
   Frontend: ["React", "React Router", "Next.js", "Tailwind CSS", "Bootstrap"],
   Backend: ["Spring Boot", "Node.js", "Express", "NestJS", "REST APIs"],
   "Bases de données": ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
@@ -91,5 +91,27 @@ export const PROJECTS: Project[] = [
       "Docker",
     ],
     live: "https://ccheky.fr/",
+  },
+  {
+    emoji: "📊",
+    color: "purple",
+    title: "ClassiGit",
+    desc: "Projet réalisé dans le cadre de ma formation en BUT : application de visualisation et de classification de données avec l’algorithme k-NN. Permet de charger des jeux de données, explorer des projections, classifier des points et évaluer les performances selon le choix de k.",
+    tags: ["Java", "Data Visualization", "k-NN", "CSV"],
+  },
+  {
+    emoji: "🎲",
+    color: "accent",
+    title: "Pédagopic",
+    desc: "Projet réalisé dans le cadre de ma formation en BUT : jeu de plateau éducatif (1 à 7 joueurs) basé sur une progression par niveaux. Les joueurs répondent à des questions pour avancer, avec une difficulté croissante et un système de progression bloquée favorisant l’apprentissage continu.",
+    tags: ["Game Design", "Java", "Education", "UI/UX"],
+  },
+  {
+    emoji: "💬",
+    color: "red",
+    title: "CampusTalk",
+    desc: "Projet réalisé dans le cadre de ma formation en BUT : application de messagerie avec fils de discussion. Permet de créer des comptes, publier et interagir avec des messages (likes, réponses), gérer les participants et modérer les contenus, avec une suppression automatique des messages après 24h.",
+    tags: ["Java", "Tomcat", "Messaging", "Backend", "Authentication", "CRUD"],
+    live: "",
   },
 ];

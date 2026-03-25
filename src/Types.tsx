@@ -15,7 +15,7 @@ export type Experience = {
   tags: string[];
 };
 
-export type ProjectColor = "accent" | "blue" | "purple" | "orange";
+export type ProjectColor = "accent" | "blue" | "purple" | "orange" | "red";
 
 export type Project = {
   emoji: string;
