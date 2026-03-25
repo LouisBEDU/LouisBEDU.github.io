@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <FadeSection>
       <section id="projects">
-        <SectionHeading number="04" label="Projets" />
+        <SectionHeading number="05" label="Projets" />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {PROJECTS.map((project, i) => {
             const c = colorMap[project.color];

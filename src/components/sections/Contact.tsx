@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <FadeSection>
       <section id="contact">
-        <SectionHeading number="05" label="Contact" />
+        <SectionHeading number="06" label="Contact" />
         <div
           className="rounded-xl p-8"
           style={{ background: "#111", border: "1px solid #1e1e1e" }}

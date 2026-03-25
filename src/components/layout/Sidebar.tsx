@@ -30,7 +30,7 @@ export default function Sidebar({ active }: SidebarProps) {
   ];
 
   return (
-    <aside className="lg:w-[320px] shrink-0 lg:sticky lg:top-0 lg:max-h-screen lg:overflow-y-auto py-16 lg:py-20 flex flex-col gap-10">
+    <aside className="lg:w-[320px] shrink-0 lg:sticky lg:top-0 lg:max-h-screen lg:overflow-y-auto pt-16 lg:py-20 flex flex-col gap-10">
       {/* Identity */}
       <div>
         <div className="relative inline-block mb-5">

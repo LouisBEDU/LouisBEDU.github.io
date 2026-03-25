@@ -15,6 +15,15 @@ export type Experience = {
   tags: string[];
 };
 
+export type Education = {
+  school: string;
+  degree: string;
+  period: string;
+  active: boolean;
+  description: string[];
+  tags: string[];
+};
+
 export type ProjectColor = "accent" | "blue" | "purple" | "orange" | "red";
 
 export type Project = {

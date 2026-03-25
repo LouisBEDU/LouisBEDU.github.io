@@ -1,8 +1,15 @@
-import type { Experience, NavItem, Project, StackMap } from "./Types";
+import type {
+  Education,
+  Experience,
+  NavItem,
+  Project,
+  StackMap,
+} from "./Types";
 
 export const NAV: NavItem[] = [
   { id: "about", label: "À PROPOS" },
   { id: "stack", label: "STACK" },
+  { id: "education", label: "EDUCATION" },
   { id: "experience", label: "EXPÉRIENCE" },
   { id: "projects", label: "PROJETS" },
   { id: "contact", label: "CONTACT" },
@@ -16,6 +23,46 @@ export const STACK: StackMap = {
   "DevOps & Outils": ["Docker", "GitHub Actions", "Git", "Linux", "Windows"],
 };
 
+export const EDUCATION: Education[] = [
+  {
+    school: "IUT A de Lille - Université de Lille",
+    degree: "BUT Informatique",
+    period: "Sept 2022 — Présent",
+    active: true,
+    description: [
+      "Formation en informatique axée sur le développement logiciel, les systèmes et les bases de données.",
+      "Apprentissage des fondamentaux en algorithmique, programmation orientée objet, réseaux et systèmes.",
+      "Réalisation de projets en équipe (applications web, logiciels, bases de données) dans un contexte proche du monde professionnel.",
+    ],
+    tags: [
+      "Informatique",
+      "Développement logiciel",
+      "Bases de données",
+      "Réseaux",
+      "Algorithmique",
+    ],
+  },
+  {
+    school: "Lycée Paul Duez - Cambrai",
+    degree:
+      "Baccalauréat STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)",
+    period: "Sept 2020 — Juin 2022",
+    active: false,
+    description: [
+      "Formation technologique centrée sur les sciences de l'ingénieur et le développement durable.",
+      "Apprentissage des bases en électronique, mécanique, informatique et énergie.",
+      "Réalisation de projets technologiques en équipe avec une approche concrète et expérimentale.",
+    ],
+    tags: [
+      "STI2D",
+      "Sciences de l'ingénieur",
+      "Électronique",
+      "Informatique",
+      "Physique appliquée",
+    ],
+  },
+];
+
 export const EXPERIENCE: Experience[] = [
   {
     title: "Developer Full Stack",
@@ -25,7 +72,7 @@ export const EXPERIENCE: Experience[] = [
     active: true,
     bullets: [
       "Développement et amélioration de fonctionnalités sur une application SaaS B2B avec Sails.js et AngularJS/Vue.js.",
-      "Identification et correction de bugs afin d’améliorer la stabilité et l’expérience utilisateur.",
+      "Identification et correction de bugs afin d'améliorer la stabilité et l'expérience utilisateur.",
       "Participation à la maintenance du code legacy et aux revues de code.",
     ],
     tags: [
@@ -96,14 +143,14 @@ export const PROJECTS: Project[] = [
     emoji: "📊",
     color: "purple",
     title: "ClassiGit",
-    desc: "Projet réalisé dans le cadre de ma formation en BUT : application de visualisation et de classification de données avec l’algorithme k-NN. Permet de charger des jeux de données, explorer des projections, classifier des points et évaluer les performances selon le choix de k.",
+    desc: "Projet réalisé dans le cadre de ma formation en BUT : application de visualisation et de classification de données avec l'algorithme k-NN. Permet de charger des jeux de données, explorer des projections, classifier des points et évaluer les performances selon le choix de k.",
     tags: ["Java", "Data Visualization", "k-NN", "CSV"],
   },
   {
     emoji: "🎲",
     color: "accent",
     title: "Pédagopic",
-    desc: "Projet réalisé dans le cadre de ma formation en BUT : jeu de plateau éducatif (1 à 7 joueurs) basé sur une progression par niveaux. Les joueurs répondent à des questions pour avancer, avec une difficulté croissante et un système de progression bloquée favorisant l’apprentissage continu.",
+    desc: "Projet réalisé dans le cadre de ma formation en BUT : jeu de plateau éducatif (1 à 7 joueurs) basé sur une progression par niveaux. Les joueurs répondent à des questions pour avancer, avec une difficulté croissante et un système de progression bloquée favorisant l'apprentissage continu.",
     tags: ["Game Design", "Java", "Education", "UI/UX"],
   },
   {

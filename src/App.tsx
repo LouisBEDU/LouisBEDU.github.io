@@ -7,6 +7,7 @@ import Stack from "./components/sections/Stack";
 import Experience from "./components/sections/Experience";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
+import Education from "./components/sections/Education";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<string>("about");
@@ -67,6 +68,7 @@ export default function App() {
         <main className="flex-1 py-16 lg:py-20 flex flex-col gap-20">
           <About />
           <Stack />
+          <Education />
           <Experience />
           <Projects />
           <Contact />
