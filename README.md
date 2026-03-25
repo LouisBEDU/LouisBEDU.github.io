@@ -1,24 +1,73 @@
-# Bienvenue mon Portfolio
+# React + TypeScript + Vite
 
-Je m'appelle Louis et je suis étudiant en informatique à Lille. Passionné par les nouvelles technologies et le développement logiciel, je consacre mon temps à approfondir mes connaissances dans ce domaine en constante évolution. Mon parcours académique, combiné à mes projets personnels, m'a permis de développer des compétences solides dans plusieurs langages de programmation, tels que Java, C, et SQL, ainsi que dans la gestion de bases de données. J'ai également une bonne maîtrise des technologies web, notamment HTML, CSS, et BASH, ce qui me permet d'aborder diérents aspects du développement logiciel.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-En parallèle de mes études, je me tiens informé des avancées récentes dans le domaine informatique. Ces expériences m'ont appris à être rigoureux, à résoudre des problèmes complexes, et à travailler de manière autonome tout en appréciant l'importance du travail en équipe.
+Currently, two official plugins are available:
 
-## Formations
-- ### BUT Informatique
-    IUT de Lille  
-    2022 - Aujourd'hui
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- ### Baccalauréat Scientifique
-    Lycée Paul Duez de   
-    2020 - 2022
+## React Compiler
 
-# Compétences
-- ### Langages de Programmation 
-    Java, C  
-    HTML, CSS, JavaScript
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- ### Outils & Technologies
-    Git  
-    MySQL, PostgreSQL  
-    Linux, Windows
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```

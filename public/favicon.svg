@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Carré arrondi -->
+  <rect width="56" height="56" rx="12" fill="#00ff87"/>
+  <!-- Texte LB -->
+  <text
+    x="28"
+    y="28"
+    dominant-baseline="central"
+    text-anchor="middle"
+    font-family="Syne, sans-serif"
+    font-weight="900"
+    font-size="20"
+    fill="#000000"
+  >LB</text>
+  <!-- Petite boule verte en bas à droite -->
+  <circle cx="56" cy="56" r="7" fill="#00ff87" stroke="#0a0a0a" stroke-width="2.5"/>
+</svg>
