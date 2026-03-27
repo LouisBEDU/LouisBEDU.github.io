@@ -27,7 +27,7 @@ export default function App() {
         const el = document.getElementById(id);
         if (!el) continue;
         const rect = el.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 1.75) {
+        if (rect.top <= window.innerHeight / 1.80) {
           current = id;
         }
       }
